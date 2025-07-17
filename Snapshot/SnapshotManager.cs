@@ -1,8 +1,4 @@
-﻿#nullable enable
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Alphaleonis.Win32.Vss;
+﻿using Alphaleonis.Win32.Vss;
 
 namespace NetClone.Snapshot
 {

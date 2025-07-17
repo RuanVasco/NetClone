@@ -1,15 +1,8 @@
-﻿using NetClone.Snapshot;
+﻿using NetClone.Clone;
 
 class Program {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Criando snapshot de C:\\ ...");
-        var opts = new SnapshotOptions(new[] { @"C:\" });
-
-        using var snap = new SnapshotManager(opts);
-        snap.CreateSnapshot();
-
-        Console.WriteLine("Snapshot criado:");
-        Console.WriteLine("  " + snap.Root);
+    static void Main(string[] args) {
+        string outVhdx = Path.Combine(AppContext.BaseDirectory, "SystemClone.vhdx");
+        DiskCloner.CloneSystemDiskToVhdx(@"C:\", outVhdx);
     }
 }

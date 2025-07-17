@@ -9,6 +9,9 @@
 
     <ItemGroup>
       <PackageReference Include="AlphaVSS" Version="2.0.0-alpha0044" />
+      <PackageReference Include="DiscUtils.Core" Version="0.16.13" />
+      <PackageReference Include="DiscUtils.Vhdx" Version="0.16.13" />
+      <PackageReference Include="System.Management" Version="9.0.7" />
     </ItemGroup>
 
 </Project>
